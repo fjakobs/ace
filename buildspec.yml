@@ -1,10 +1,12 @@
 version: 0.1
+
 phases:
   build:
     commands:
-      npm install
+      - npm install
 
 artifacts:
   type: zip
   files:
     - **/*
+  discard-paths: yes
