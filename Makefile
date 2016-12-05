@@ -11,8 +11,8 @@ pre_build:
 	cp -r doc/site/images build/textarea
 
 build: pre_build
-	./Makefile.dryice.js normal
-	./Makefile.dryice.js demo
+	node ./Makefile.dryice.js normal
+	node ./Makefile.dryice.js demo
 
 # Minimal build: call Makefile.dryice.js only if our sources changed
 basic: build/src/ace.js
